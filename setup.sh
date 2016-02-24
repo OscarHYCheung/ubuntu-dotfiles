@@ -5,4 +5,4 @@ mkdir ~/.vim/swaps
 mkdir ~/.vim/undo
 
 # Copy config files and profiles
-cp ./.profile ./.functions ./.vimrc ./.gitconfig ./.aliases ./exports "$HOME"
+cp ./.profile ./.functions ./.vimrc ./.gitconfig ./.aliases ./.exports ./.bashrc "$HOME"
