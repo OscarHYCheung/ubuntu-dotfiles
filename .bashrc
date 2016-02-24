@@ -2,7 +2,7 @@
 [ -z "$PS1" ] && return
 
 default_username='ubuntu'
-default_hostname='hostnam'
+default_hostname='hostname'
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -64,7 +64,7 @@ function git_info() {
 
 # Only show username/host if not default
 function usernamehost() {
-    if [ $USER != "$default_username" ] || [ $HOSTNAME != "$default_hostname" ]; then echo "${MAGENTA}$USER ${WHITE}at ${ORANGE}$HOSTNAME $WHITEin "; fi
+    if [ $USER != "$default_username" ] || [ $HOSTNAME != "$default_hostname" ]; then echo "${MAGENTA}$USER ${WHITE}at ${ORANGE}$HOSTNAME ${WHITE}"; fi
 }
 
 # iTerm Tab and Title Customization and prompt customization
